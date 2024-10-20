@@ -1,0 +1,16 @@
+
+    [
+        {
+            "id" : 1,
+            "nama": "Nafis Akhsan S.Pd",
+            "devisi" : "Chairman of the Advisory Board"
+        }, {
+            "id": 2,
+            "nama" : "Fie Ardika Panjali",
+            "devisi": "Chairman"
+        }, {
+            "id":3,
+            "nama": "Ilham Trihandoyo",
+            "devisi":"Vice Chairman"
+        }
+    ]

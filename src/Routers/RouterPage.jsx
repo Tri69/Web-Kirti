@@ -14,9 +14,18 @@ const RouterPage = () => {
         <>
            <Router>
             <Routes>
-                <Route index element={<HomePage/>} />
-                <Route path="profil" element={<AboutPage/>}/>
-				<Route path="alumni" element={<AlumniPage/>}/>
+                <Route 
+                    index 
+                    element={<HomePage/>} 
+                />
+                <Route 
+                    path="profil" 
+                    element={<AboutPage/>}
+                />
+				<Route 
+                    path="alumni" 
+                    element={<AlumniPage/>}
+                    />
 				<Route path="contact" element={<ContactPage/>}/>
                 <Route path='keanggotaan' element={<AnggotaPage/>}/>
 				<Route path="materi/html_dasar" element={<HTMLDasar/>}/>

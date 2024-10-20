@@ -5,7 +5,7 @@ import kirti_stemsago from '../assets/kirti_stemsago.png';
 const Navbars = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-primary bg-primary fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img className="logo" src={kirti_stemsago}/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
