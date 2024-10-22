@@ -1,30 +1,42 @@
 import { useEffect, useState } from "react";
+import CompKordinator from "./CompKordinator";
+import CompStructure from "./CompStructure";
+import CompAlumni from "./CompAlumni";
+import CompAnggota from './CompAnggota';
+
 
 const CompProfilHome = () => {
-    const [data, setData] = useState([]);
-
-    const FecthApiData = async () => {
-        const datares = await fetch('./DataProfil.json');
-        const resultres = await datares.json();
-        setData(resultres);
+    const [numbernav, setNumbernav] = useState("1");
+    const leg = () => {
+        if(numbernav == "1"){
+            return <CompStructure />
+        }else if(numbernav == "2") {
+           return <CompKordinator/>
+        }else {
+            return <CompAlumni/>
+        } 
     }
-    useEffect(() => {
-        FecthApiData()
-    }, [])
+    useEffect(()=> {
+        leg()
+    }, leg)
     return (
         <>
             <center>
-                <h1>Our Contributor</h1><hr />
-                <div class="row">
-                    {data.map((datas, i) => (
-                        <div class="col-lg-4" key={datas.id}>
-                            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)" /></svg>
-                            <h2 class="fw-normal">{datas.nama}</h2>
-                            <p>{datas.devisi}</p>
-                            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-                        </div>
-                    ))}
-                </div>
+                <h1>Our Contributor</h1><hr /> 
+                <div>
+                <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" >
+                        <li class="nav-item" role="presentation">
+                            <button onClick={()=> Structure(setNumbernav("1"))} class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Structure</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button onClick={()=> Coordinator(setNumbernav("2"))} class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Coordination</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button onClick={()=> Alumni(setNumbernav("3")) } class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Alumni</button>
+                        </li>
+                    </ul>
+                </div><br/>
+               {leg()}
             </center>
         </>
     )

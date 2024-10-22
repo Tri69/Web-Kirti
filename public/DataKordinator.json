@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "nama":"Ilham ",
+        "devisi": "Koordinator Programming 1"
+    }, {
+        "id": 2,
+        "nama":"Muhammad Fikri Hermansyah",
+        "devisi":"Koordinator Programming 2"
+    }, {
+        "id":3,
+        "nama":"Faisal",
+        "devisi":"Koordinator Programming 3"
+    }
+]

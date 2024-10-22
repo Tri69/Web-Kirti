@@ -55,6 +55,10 @@ body {
 .about-list ul {
   display: flex; justify-content: space-evenly;
 }
+#pillNav2{
+  max-width: 450px;
+  --bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);
+}
 @media(max-width: 670px) {
 	.container-body {
 		background-size:cover;
@@ -68,7 +72,7 @@ body {
 .caption-body h3{
 	
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
 }
 .nm {
  
