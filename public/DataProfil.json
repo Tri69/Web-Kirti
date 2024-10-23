@@ -2,7 +2,7 @@
     [
         {
             "id" : 1,
-            "nama": "Nafis Akhsan S.Pd",
+            "nama": "Nafis Akhsan S.Pd.",
             "devisi" : "Chairman of the Advisory Board"
         }, {
             "id": 2,
@@ -12,5 +12,13 @@
             "id":3,
             "nama": "Ilham Trihandoyo",
             "devisi":"Vice Chairman"
+        },{
+            "id":4,
+            "nama": "Dinda Saputri",
+            "devisi":"Bendahara"
+        },{
+            "id":5,
+            "nama": "Nuralifah Afiani",
+            "devisi":"Sekertaris"
         }
     ]
