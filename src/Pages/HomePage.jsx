@@ -92,6 +92,7 @@ const HomePage = () => {
 					</div>
 				</div>
 
+				<div className="container">
 				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -121,7 +122,7 @@ const HomePage = () => {
 							</div>
 						</div>
 					</div>
-				</div><br/><br/><br/>
+				</div></div><br/><br/><br/>
 				
 				<div>
 					<CompProfilHome/>
