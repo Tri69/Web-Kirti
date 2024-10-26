@@ -56,7 +56,7 @@ body {
   display: flex; justify-content: space-evenly;
 }
 #pillNav2{
-  max-width: 450px;
+  max-width: 350px;
   --bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);
 }
 @media(max-width: 670px) {
