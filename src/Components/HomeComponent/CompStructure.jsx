@@ -25,4 +25,5 @@ const CompStructure = () => {
         </>
     )
 }
+
 export default CompStructure;

@@ -7,6 +7,7 @@ import kegiatanmingguan from '../assets/kegiatan-mingguan.png';
 import networking from '../assets/networking.png';
 import { Link } from "react-router-dom";
 import CompProfilHome from "../Components/HomeComponent/CompProfilHome";
+import BeritaCom from "../Components/HomeComponent/BeritaCom";
 
 const HomePage = () => {
 	return (
@@ -128,7 +129,7 @@ const HomePage = () => {
 					<CompProfilHome/>
 				</div><br></br><br/><br/>
 
-				<div>
+				<div class="container">
 					<div>
 						<h2 class="text-center">Q & A KIRTI</h2>
 						<hr/>
@@ -160,6 +161,12 @@ const HomePage = () => {
 							</div>
 						</div>
 					</div>
+				</div>
+
+				<div class="container">
+					<hr/>
+					<h1 class="text-center">Berita</h1>
+					<BeritaCom/>
 				</div>
 			</Layout>
 		</>

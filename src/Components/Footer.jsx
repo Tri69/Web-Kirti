@@ -41,6 +41,7 @@ const Footer = () => {
 
             <div class="col-md-5 offset-md-1 mb-3">
               <p>Email : Jaya@smkn1gombong.sch.id</p>
+              <p>Adress : Jl. Wilis, No. 15, Wero, Gombong, Kebumen</p>
               <form>
                 <h5>Subscribe to our newsletter</h5>
                 <p>Monthly digest of what's new and exciting from us.</p>

@@ -1,11 +1,16 @@
 import Layout from "../../Components/Layout";
 import '../../assets/Styles/html.module.css';
-import code from '../../assets/PDF/Konfigurasi Code Editor.pdf'
-import ReactPDF from '@react-pdf/renderer';
-import {PDFViewer} from '@react-pdf/renderer'
+//import code from '../../assets/PDF/Konfigurasi Code Editor.pdf'
+
 import RenderMateri from "./RenderMateri";
+import DocViewer from 'react-doc-viewer';
 
 const HTMLDasar = () => {
+	const PDFHTML = [
+		{
+			uri:require('../../assets/PDF/Konfigurasi Code Editor.pdf')
+		}
+	];
 	return(
 		<>
 			<Layout>
@@ -15,9 +20,7 @@ const HTMLDasar = () => {
 						<h1 className="text-center">Materi 1.1.1</h1>
 						<center>
 						<div class="code">
-							<PDFViewer>
-							{}
-							</PDFViewer>
+							<DocViewer documents={PDFHTML}/>
 						</div>
 						</center>
 					</div>
