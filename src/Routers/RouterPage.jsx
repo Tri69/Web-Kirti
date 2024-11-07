@@ -33,7 +33,7 @@ const RouterPage = () => {
                     path='keanggotaan' 
                     element={<AnggotaPage/>}/>
 		<Route 
-                    path="materi" 
+                    path="materi/html" 
                     element={<HTMLDasar/>}/>
                
                 <Route 
