@@ -33,11 +33,9 @@ const RouterPage = () => {
                     path='keanggotaan' 
                     element={<AnggotaPage/>}/>
 				<Route 
-                    path="materi/html_dasar" 
+                    path="materi/html" 
                     element={<HTMLDasar/>}/>
-                <Route 
-                    path="materi/html_dasar/:slug_materi"
-                    element={<HTMLDasar/>}/>
+               
                 <Route 
                     path='materi/css_dasar' 
                     element={<CSSDasar/>}/>
