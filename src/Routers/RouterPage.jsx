@@ -32,8 +32,8 @@ const RouterPage = () => {
                 <Route 
                     path='keanggotaan' 
                     element={<AnggotaPage/>}/>
-				<Route 
-                    path="materi/html" 
+		<Route 
+                    path="materi" 
                     element={<HTMLDasar/>}/>
                
                 <Route 
