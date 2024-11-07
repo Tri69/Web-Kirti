@@ -2,10 +2,10 @@ import { Link } from "react-router-dom"
 import "../App.css"
 import kirti_stemsago from '../assets/kirti_stemsago.png';
 
-const Navbars = () => {
+const Navbars = (props) => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img className="logo" src={kirti_stemsago}/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@ const Navbars = () => {
                 <Link to={"/profil"}><a class="nav-link" href="#">Profil</a></Link>
               </li>
               <li class="nav-item">
-                <Link to={"/keanggotaan"}><a class="nav-link" href="#">Keanggotaan</a></Link>
+                <Link to={"/keanggotaan"}><a class="nav-link {props.active}" href="#">Keanggotaan</a></Link>
               </li>
               <li class="nav-item">
                 <Link to={"/alumni"}><a class="nav-link" href="#">Alumni</a></Link>

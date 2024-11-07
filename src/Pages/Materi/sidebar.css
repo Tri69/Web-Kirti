@@ -1,0 +1,58 @@
+ .container-side1{
+            background: whitesmoke;font-family: sans-serif;
+            width: 260px;position: fixed;margin-top:65px;
+            box-shadow: 8px 8px 7px rgba(0, 0, 0 ,.2);
+            min-height: 100vh;top:0;left: 0;
+        }
+        .side-ul li {
+            display: block;
+        }
+        label {
+            font-weight: 700;
+            margin-top: 50px;
+        }
+        .container-body1 {
+            margin-left: 280px;margin-top: 40px;font-family: arial;
+        }
+        .button{
+            display: flex;justify-content: space-between;
+            bottom: 20px
+        }
+        .button button {
+            height: 38px;width: 120px;font-weight: 500;
+            border: none;border-radius: 6px;
+        }
+        .section1 label {
+            color:aqua;
+        }
+        .section-card1 {
+            box-shadow: 2px 5px 8px 7px rgba(0, 0,0, .1);
+               border-radius:10px;padding: 10px;max-width: 500px;
+        }
+        .section-card1 ul li  {
+            padding: 5px; text-decoration: underline;color: aqua;
+        }
+        .card-code1 {
+            max-width: 500px;
+            background: whitesmoke;
+            border-radius: 8px;box-shadow: 4px 5px 6px rgba(0,0,0,.1)
+        }
+        .blok-code {
+            font-family: monospace; font-size: 15px;
+        }
+        .blok-code pre code{
+            font-family: monospace;font-weight: 500;
+        }
+        @media(max-width:660px){
+            .side-ul{
+                display: none;
+            }
+            .container{
+                margin-left: 20px;margin-right: 50px;
+            }
+           .side-ul .open {
+	
+    display: flex;
+    flex-direction: column;
+  }
+        }

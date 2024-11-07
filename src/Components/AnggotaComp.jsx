@@ -27,7 +27,7 @@ const IndexSearch = (props)=>{
         </tr>
       </thead>
       <tbody>
-          {dataSiswaSearch.map((datas)=> ( 
+          {dataSiswaSearch.map((datas)=> (  
         <tr key={datas.id+1}>
           <td>{datas.id}</td>
           <td>{datas.name}</td>
@@ -39,10 +39,10 @@ const IndexSearch = (props)=>{
              ))}
      </tbody>
         </Table>
+        
         </>
     )
 }
-
 const Index = ()=>{
      const [dataSiswa, setDataSiswa] = useState([]);
     
@@ -68,6 +68,8 @@ const Index = ()=>{
       </thead>
       <tbody>
           {dataSiswa.map((datas)=> (
+          
+          
         <tr key={datas.id+1}>
           <td>{datas.id}</td>
           <td>{datas.name}</td>
@@ -79,10 +81,11 @@ const Index = ()=>{
              ))}
      </tbody>
         </Table>
+        
         )
 }
-
 const AnggotaComp = ()=> {
+   
     //const [secSearch, setSecSearch] = useState([])
     const [dataSearch, setDataSearch] = useState('')
    
@@ -93,6 +96,7 @@ const AnggotaComp = ()=> {
          return <IndexSearch KeyWord={dataSearch}/>;
       }
  }
+    
     function CariData(e) {
         let KeyWord = e.target.value;
         setDataSearch(KeyWord);
@@ -109,6 +113,7 @@ const AnggotaComp = ()=> {
                     onChange={CariData} />
                 <button>Search</button>
             </div><br/>
+            
             {TrueAndFalse()}
         </Container>
         </>

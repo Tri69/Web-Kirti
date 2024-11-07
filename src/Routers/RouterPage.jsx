@@ -27,13 +27,16 @@ const RouterPage = () => {
                     element={<AlumniPage/>}
                     />
 				<Route 
-                    path="contact" 
+                    path="news" 
                     element={<ContactPage/>}/>
                 <Route 
                     path='keanggotaan' 
                     element={<AnggotaPage/>}/>
 				<Route 
                     path="materi/html_dasar" 
+                    element={<HTMLDasar/>}/>
+                <Route 
+                    path="materi/html_dasar/:slug_materi"
                     element={<HTMLDasar/>}/>
                 <Route 
                     path='materi/css_dasar' 
