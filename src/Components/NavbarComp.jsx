@@ -38,7 +38,7 @@ function NavbarComp() {
                     title="Materi"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="/materi/html_dasar">HTML Dasar</NavDropdown.Item>
+                    <Link to={"/materi/html"}><NavDropdown.Item href="/materi/html_dasar">HTML Dasar</NavDropdown.Item></Link>
                     <NavDropdown.Item href="#action4">
                       CSS Dasar
                     </NavDropdown.Item>
