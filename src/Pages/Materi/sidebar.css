@@ -44,6 +44,9 @@
             font-family: monospace;font-weight: 500;
         }
         @media(max-width:660px){
+		.container-side1{
+			display:none;
+		}
             .side-ul{
                 display: none;
             }
