@@ -31,7 +31,7 @@ const HomePage = () => {
 							<div class="col-10 col-sm-8 col-lg-6">
 								<img src={kegiatan} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" id="foto-section"/>
 							</div>
-							<div class="col-lg-6" data-aos="fade-right">
+							<div class="col-lg-6" >
 								<h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">KIRTI Organizations <b className="text-primary">&lt;Technology&gt;</b><br /> for Human Beings</h3>
 								<p class="lead">KIRTI is an Organizations of SMK N1 Gombong which
 									was inaugurated on February 11, 2011. As name implies,
