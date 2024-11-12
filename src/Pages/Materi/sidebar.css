@@ -1,4 +1,4 @@
- .container-side1{
+.container-side1{
             background: whitesmoke;font-family: sans-serif;
             width: 260px;position: fixed;margin-top:65px;
             box-shadow: 8px 8px 7px rgba(0, 0, 0 ,.2);
@@ -46,6 +46,12 @@
         @media(max-width:660px){
 		.container-side1{
 			display:none;
+		}
+		.section-card1{
+			margin-right:10px;
+		}
+		.card-code1{
+			margin-right:10px;
 		}
             .side-ul{
                 display: none;
