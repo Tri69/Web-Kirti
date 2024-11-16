@@ -24,12 +24,12 @@ function NavbarComp() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  <img className='logo' src={kirti_stemsago}/>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3" variant="underline"  defaultActiveKey="/">
-                    <Link to={"/"} ><Nav.Link href="/">Home</Nav.Link></Link>
+                    <Nav.Link href="/"><Link to={"/"} >Home</Link></Nav.Link>
                     <Link to={"/profil"}><Nav.Link href="/profil" eventKey="link-1">Profil</Nav.Link></Link>
                     <Link to={"/keanggotaan"}><Nav.Link href="/keanggotaan" eventKey="link-2">Keanggotaan</Nav.Link></Link>
                     <Link to={"/alumni"}><Nav.Link href="/alumni" eventKey="link-3">Alumni</Nav.Link></Link>
@@ -38,7 +38,7 @@ function NavbarComp() {
                     title="Materi"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <Link to={"/materi/html"}><NavDropdown.Item href="/materi/html_dasar">HTML Dasar</NavDropdown.Item></Link>
+                    <NavDropdown.Item href="/materi/html_dasar">HTML Dasar</NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
                       CSS Dasar
                     </NavDropdown.Item>

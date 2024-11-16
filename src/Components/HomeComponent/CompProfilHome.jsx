@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState , useRef} from "react";
 import CompKordinator from "./CompKordinator";
 import CompStructure from "./CompStructure";
 import CompAlumni from "./CompAlumni";
 import CompAnggota from './CompAnggota';
+import Container from'react-bootstrap/Container';
 
 const rennderProfil = (NumberStructure)=> {
     switch(NumberStructure) {
@@ -29,9 +30,11 @@ const CompProfilHome = () => {
     let Alumni =()=> {
         return setNumbernav("3")
     }
+    const referren = useRef(null);
     return (
         <>
             <center>
+                <Container>
                 <h1>Our Contributor</h1><hr /> 
                 <div>
                 <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" >
@@ -46,7 +49,9 @@ const CompProfilHome = () => {
                         </li>
                     </ul>
                 </div><br/>
-                {rennderProfil(numbernav)}
+          
+                    {rennderProfil(numbernav)}
+                </Container>
             </center>
         </>
     )

@@ -8,6 +8,7 @@ import HTMLDasar from '../Pages/Materi/HTMLDasar';
 import AnggotaPage from '../Pages/AnggotaPage';
 import CSSDasar from '../Pages/Materi/CSSDasar';
 import JavaScriptDasar from '../Pages/Materi/JavaScriptDasar';
+import MateriRender from '../Components/MateriComponents/MateriRender';
 
 const RouterPage = () => {
     return(
@@ -32,13 +33,16 @@ const RouterPage = () => {
                 <Route 
                     path='keanggotaan' 
                     element={<AnggotaPage/>}/>
-		<Route 
-                    path="materi/html" 
+				<Route 
+                    path="materi/html_dasar" 
                     element={<HTMLDasar/>}/>
-               
+                <Route 
+                    path="materi/html/:url"
+                    element={<MateriRender />}/>
                 <Route 
                     path='materi/css_dasar' 
-                    element={<CSSDasar/>}/>
+                    element={<CSSDasar/>}
+                    />
                 <Route 
                     path='materi/javascript_dasar' 
                     element={<JavaScriptDasar/>}/>

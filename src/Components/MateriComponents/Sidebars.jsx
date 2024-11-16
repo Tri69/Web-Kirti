@@ -1,22 +1,11 @@
-import {useState} from 'react'
+import {useState, useRef} from 'react'
 //import '../../App.css';
-import RenderMateri from './RenderMateri';
-import RenderMateriin from './RenderMateriin';
-import RenderMaterisel from './RenderMaterisel'
-const Sibebars = ()=> {
-    const [pageNumber, setPageNumber] = useState("2");
-    console.log(pageNumber);
-    const RenderPage = ()=> {
-        if(pageNumber == "2"){
-            return <RenderMateri/>
-        }else if(pageNumber == "3"){
-            return <RenderMateriin/>
-        }else if(pageNumber == "4") {
-            return <RenderMaterisel/>
-        }else {
-            return <RendeMateriin/>
-        }
-    }
+
+import { Link } from 'react-router-dom';
+const Sidebars = ()=> {
+   
+    const data = useRef(0);
+
     return(
         <>
         
@@ -29,12 +18,12 @@ const Sibebars = ()=> {
                 </li>
                 
                 <li>
-                    <label onClick={() => setPageNumber("2")}>FROM ACTION</label>
-                    <ul>
+                    <label>FROM ACTION</label>
+                    <ul className='form-ul1'>
                         <summary>
-                        <li onClick={() => setPageNumber("3")}>Input Type</li>
-                        <li onClick={() => setPageNumber("4")}>Select Type</li>
-                        <li onClick={() => setPageNumber("2")}>Layout</li>
+                        <Link to={"/materi/html/form"}> <li >From Input</li></Link>
+                        <Link to={"/materi/html/form-input"}> <li >Input Type</li></Link>
+                        <Link to={"/materi/html/form-select"}><li >Select Type</li></Link>
                         </summary>
                     </ul>
                 </li>
@@ -68,9 +57,9 @@ const Sibebars = ()=> {
         </div>
     </aside>
     <div>
-        <RenderPage/>
+        
     </div>
         </>
     )
 }
-export default Sibebars;
+export default Sidebars;

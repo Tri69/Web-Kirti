@@ -90,11 +90,13 @@ const AnggotaComp = ()=> {
     const [dataSearch, setDataSearch] = useState('')
    
     const TrueAndFalse = ()=> {
+   
        if(dataSearch.length <= 0) {
            return <Index/>;
-     } else {
+     } else if(dataSearch.length > 0) {
          return <IndexSearch KeyWord={dataSearch}/>;
       }
+    
  }
     
     function CariData(e) {
@@ -110,7 +112,7 @@ const AnggotaComp = ()=> {
                 <Form.Control 
                     type="text" 
                     placeholder="name@example.com" 
-                    onChange={CariData} />
+                    onKeyUp={CariData} />
                 <button>Search</button>
             </div><br/>
             

@@ -10,7 +10,7 @@ const AnggotaPage = ()=> {
             <Layout>
                 <br/><br/>
                 <br/>
-                <h1>Anggota Page</h1>
+                <h1 class="text-center">Anggota Page</h1>
                 <AnggotaComp/>
             </Layout>
         </>

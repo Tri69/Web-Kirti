@@ -5,11 +5,7 @@ const header = () => {
     const daten = () => {
         const da = new Date();
         setDate(da)
-
     }
-    useEffect(()=> {
-        daten()
-    }, [])
     return(
         <>
             <marquee>{date}</marquee>

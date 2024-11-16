@@ -25,6 +25,9 @@ body {
 .caption-body {
 	text-align:center;
 }
+.Active-Feature{
+    background: greenyellow;box-shadow: 3px 4px 3px rgba(0,0,0,.1);border-radius: 7px;
+}
 .caption-body h1 {
   font-weight: bold;font-family:  'Courier New', Courier, monospace;
   font-size: 50px;

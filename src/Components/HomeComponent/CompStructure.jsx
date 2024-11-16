@@ -9,10 +9,10 @@ const CompStructure = () => {
     }
     useEffect(() => {
         FecthApiData()
-    }, [])
+    }, []);
+    
     return (
         <>
-            <div class="container">
             <div class="row">
                 {data.map((datas, i) => (
                     <div class="col-lg-4" key={datas.id}>
@@ -22,7 +22,7 @@ const CompStructure = () => {
                         <p><a class="btn btn-secondary" href="">View details &raquo;</a></p>
                     </div>
                 ))}
-            </div></div>
+            </div>
         </>
     )
 }
