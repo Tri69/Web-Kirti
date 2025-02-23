@@ -34,17 +34,17 @@ const RouterPage = () => {
                     path='keanggotaan' 
                     element={<AnggotaPage/>}/>
 				<Route 
-                    path="materi/html_dasar" 
+                    path="html_dasar" 
                     element={<HTMLDasar />}/>
                 <Route 
                     path="materi/html/:url"
                     element={<MateriRender />}/>
                 <Route 
-                    path='materi/css_dasar' 
+                    path='css_dasar' 
                     element={<CSSDasar/>}
                     />
                 <Route 
-                    path='materi/javascript_dasar' 
+                    path='javascript_dasar' 
                     element={<JavaScriptDasar/>}/>
                 <Route 
                     path="*" 
