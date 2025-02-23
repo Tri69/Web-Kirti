@@ -1,6 +1,6 @@
 import LayoutMateri from "./LayoutMateri";
-
-const RenderMateri = ()=> {
+import {Link} from 'react-router-dom'
+const RenderMateri = (props)=> {
     return(
     <>
     <LayoutMateri>
@@ -48,8 +48,8 @@ const RenderMateri = ()=> {
             </div>
         </div>
         <div class="button">
-            <button>&lt;Prev Go</button>
-            <button>Lets Go&gt;</button>
+           <Link > <button>&lt;Prev Go</button></Link>
+            <Link to={props.BaseUrl}><button>Lets Go&gt;</button></Link>
             
         </div>
     </div> 

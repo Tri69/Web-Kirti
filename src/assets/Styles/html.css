@@ -1,0 +1,12 @@
+main {
+    margin-top: 60px;
+}
+.code {
+    width: 100%;
+}
+ .card .card-body h5 p {
+    text-decoration: none;
+}
+.card {
+    box-shadow: 8px 5px 4px rgba(0,0,0,.1);
+}

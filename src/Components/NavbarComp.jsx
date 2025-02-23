@@ -33,7 +33,7 @@ function NavbarComp() {
                     <Link to={"/profil"}><Nav.Link href="/profil" eventKey="link-1">Profil</Nav.Link></Link>
                     <Link to={"/keanggotaan"}><Nav.Link href="/keanggotaan" eventKey="link-2">Keanggotaan</Nav.Link></Link>
                     <Link to={"/alumni"}><Nav.Link href="/alumni" eventKey="link-3">Alumni</Nav.Link></Link>
-                    <Link to={"/news"}><Nav.Link href="" eventKey="link-4">News</Nav.Link></Link>
+                    <Link to={"/news"}><Nav.Link href="/news" eventKey="link-4">News</Nav.Link></Link>
                   <NavDropdown
                     title="Materi"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}

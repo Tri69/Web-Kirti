@@ -3,7 +3,7 @@ import HomePage from "../Pages/HomePage";
 import AboutPage from "../Pages/AboutPage";
 import NotFound from '../Pages/NotFound';
 import AlumniPage from '../Pages/AlumniPage';
-import ContactPage from '../Pages/ContactPage';
+import NewsPage from '../Pages/NewsPage';
 import HTMLDasar from '../Pages/Materi/HTMLDasar';
 import AnggotaPage from '../Pages/AnggotaPage';
 import CSSDasar from '../Pages/Materi/CSSDasar';
@@ -29,13 +29,13 @@ const RouterPage = () => {
                     />
 				<Route 
                     path="news" 
-                    element={<ContactPage/>}/>
+                    element={<NewsPage/>}/>
                 <Route 
                     path='keanggotaan' 
                     element={<AnggotaPage/>}/>
 				<Route 
                     path="materi/html_dasar" 
-                    element={<HTMLDasar/>}/>
+                    element={<HTMLDasar />}/>
                 <Route 
                     path="materi/html/:url"
                     element={<MateriRender />}/>

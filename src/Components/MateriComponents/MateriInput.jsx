@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import LayoutMateri from "./LayoutMateri";
 
-const MateriInput = ()=> {
+const MateriInput = (props)=> {
     
     return(
         <>
@@ -66,10 +67,10 @@ const MateriInput = ()=> {
         </div>
         <div class="button">
             <button>&gt;Prev Go</button>
-            <button>&lt;Lets Go</button>
+           <Link to={props.BaseUrl}> <button>&lt;Lets Go</button></Link>
             
         </div>
-         <button class="b">Klik Nac</button>
+       
     </div>
 </LayoutMateri>
         </>
