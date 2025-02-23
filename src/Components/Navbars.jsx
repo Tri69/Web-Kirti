@@ -34,10 +34,10 @@ const Navbars = (props) => {
                   Materi
                 </a>
                 <ul class="dropdown-menu">
-                  <li><Link to={"/materi/html_dasar"}><a class="dropdown-item" href="#">HTML Dasar</a></Link></li>
-                  <li><Link to={"/materi/css_dasar"}><a class="dropdown-item" href="#">CSS Dasar</a></Link></li>
+                  <li><Link to={"/html_dasar"}><a class="dropdown-item" href="#">HTML Dasar</a></Link></li>
+                  <li><Link to={"/css_dasar"}><a class="dropdown-item" href="#">CSS Dasar</a></Link></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><Link to={"/materi/javascript_dasar"}><a class="dropdown-item" href="#">JavaScript Dasar</a></Link></li>
+                  <li><Link to={"/javascript_dasar"}><a class="dropdown-item" href="#">JavaScript Dasar</a></Link></li>
                 </ul>
               </li>
 
