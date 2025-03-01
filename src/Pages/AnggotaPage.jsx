@@ -7,7 +7,7 @@ const AnggotaPage = ()=> {
     
     return (
         <>
-            <Layout>
+            <Layout title="Anggota Page | KIRTI SMKN 1 Gombong" content="KIRTI STEMSAGO">
                 <br/><br/>
                 <br/>
                 <h1 class="text-center">Anggota Page</h1>

@@ -8,21 +8,21 @@ import { Link } from "react-router-dom";
 import CompProfilHome from "../Components/HomeComponent/CompProfilHome";
 import BeritaCom from "../Components/HomeComponent/BeritaCom";
 import kegiatan1 from '../assets/kegiatan-1.jpg';
-import kegiatan2 from '../assets/kegiatan-2.jpg';
-import { Card } from "react-bootstrap";
+import keg4 from '../assets/keg4.jpg';
+import keg1 from '../assets/keg1.jpg'
 
 const HomePage = () => {
 	return (
 		<>
-			<Layout>
+			<Layout title="Home Page | KIRTI SMKN 1 Gombong" content="KIRTI STEMSAGO">
 				<div className="container-body">
-					<div className="caption-body">
+					<div className="caption-body" data-aos="fade-right">
 						<br /><br /><br /><br />
 						<h1> Welcome To The <b className="text-primary">KIRTI Organization</b></h1>
 						<h3>Information Technology, Programming, Networking and Research <br />
 							Organizations and Extracurriculars.
 							-SMK N1 Gombong</h3>
-						<Link to="materi"><button type="button" class="btn btn-primary btn-md">Daftar Sekarang!</button></Link>
+						<Link to="materi"><button type="button" class="btn btn-primary btn-md">Register Now!</button></Link>
 						<Link to="from-daftar"><button type="button" class="btn btn-light btn-md">Learn More</button></Link>
 						<br /><br /><br /><br />
 					</div>
@@ -30,10 +30,10 @@ const HomePage = () => {
 				<div class="section-1">
 					<div class="container col-xxl-8 px-4 py-5">
 						<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-							<div class="col-10 col-sm-8 col-lg-6">
+							<div class="col-10 col-sm-8 col-lg-6" data-aos="fade-left">
 								<img src={kegiatan} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" id="foto-section"/>
 							</div>
-							<div class="col-lg-6">
+							<div class="col-lg-6" data-aos="fade-right">
 								<h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">KIRTI Organizations <b className="text-primary">&lt;/Technology&gt;</b><br /> for Human Beings</h3>
 								<p class="lead">KIRTI is an Organizations of SMK N1 Gombong which
 									was inaugurated on February 11, 2011. As name implies,
@@ -53,21 +53,21 @@ const HomePage = () => {
 					<div class="container">
 						<div>
 							<h2 class="text-center">Visi and Misi</h2><hr/>
-							<div class="visi">
+							<div class="visi" >
 								<h3>Visi</h3>
-								<div class="visi-card">
+								<div class="visi-card" >
 									<img src={programming}  width="50px" height="50px"/>
-									<p>
+									<p >
 										To become a center of excellence in the field of Information
 										Technology at SMKN 1 Gombong, contributing to the advancement and 
 										development of information technology to improve human life quality.
 									</p>
 								</div>
 							</div>
-							<div class="misi">
+							<div class="misi" >
 								<h3>Misi</h3>
 								<div>
-								<div class="misi-card">
+								<div class="misi-card" >
 									<img src={programming}  width="50px" height="50px"/>
 									<p>
 										To develop and echance memebers skills in the field of information Technology 
@@ -99,7 +99,7 @@ const HomePage = () => {
 					<div class="container  px-4 py-5" id="featured-3" >
                         <h2 class="pb-2 border-bottom text-center"><b class="line-title">Extra</b>curricular Activities </h2>
 						<div class="row g-2 py-5 row-cols-1 row-cols-lg-3 " id="pad" >
-							<div class="feature col " id="box-col" className="Active-Feature">
+							<div class="feature col "  id="box-col" className="Active-Feature">
 								<div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
 									<img class="bi" width="40px" height="40px" src={programming} />
 								</div>
@@ -155,14 +155,14 @@ const HomePage = () => {
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img src={kegiatan2}class="d-block w-100" alt="..." />
+							<img src={keg1}class="d-block w-100" alt="..." />
 							<div class="carousel-caption  d-md-block">
 								<h5>Second slide label</h5>
 								<p>Some representative placeholder content for the second slide.</p>
 							</div>
 						</div>
 						<div class="carousel-item">
-							<img src={kegiatan} class="d-block w-100" alt="..." />
+							<img src={keg4} class="d-block w-100" alt="..." />
 							<div class="carousel-caption d-none d-md-block" >
 							<h5>Third slide label</h5>
 							<p>Some representative placeholder content for the third slide.</p>

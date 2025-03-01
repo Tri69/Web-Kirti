@@ -3,7 +3,7 @@
 const Footer = () => {
   return (
     <>
-      <div class="container">
+      <div class="container bg-light">
         <footer class="py-5 ">
           <div class="row">
             <div class="col-6 col-md-2 mb-3">

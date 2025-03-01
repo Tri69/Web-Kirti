@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 const RenderMateri = (props)=> {
     return(
     <>
-    <LayoutMateri>
+    <LayoutMateri title="HTML DASAR | KIRTI SMKN 1 Gombong" content="KIRTI STEMSAGO">
        <div class="container-body1">
         <div class="section1">
             <label>Learn HTML Dasar &gt;</label>

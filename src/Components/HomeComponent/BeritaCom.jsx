@@ -4,6 +4,10 @@ import Container from 'react-bootstrap/Container';
 import kegiatan from '../../assets/kegiatan.jpg';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import keg2 from '../../assets/keg2.jpg';
+import keg1 from '../../assets/keg1.jpg';
+import keg3 from '../../assets/keg3.jpg';
+
 const BeritaCom = () => {
   const data = [
     {
@@ -22,7 +26,7 @@ const BeritaCom = () => {
   return (
     <>
       <Container>
-        <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+        <div class="p-4 p-md-5 mb-4 rounded text-bg-light">
           <div class="col-md-6 px-0">
             <h1 class="display-4 fst-italic">{data[0].title}</h1>
             <p class="lead my-3">{data[0].date}</p>
@@ -41,7 +45,7 @@ const BeritaCom = () => {
                 <a href="#" class="stretched-link"></a>
               </div>
               <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                <img src={keg2} class="bd-placeholder-img" width="200" height="250"  aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"/>
               </div>
             </div>
           </div>
@@ -56,7 +60,7 @@ const BeritaCom = () => {
                 <a href="#" class="stretched-link"></a>
               </div>
               <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: صورة مصغرة" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                <img class="bd-placeholder-img"  src ={keg3} width="200" height="250" />
               </div>
             </div>
           </div>

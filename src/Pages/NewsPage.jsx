@@ -12,7 +12,7 @@ function HandleClic(){
 
 	return(
 		<>
-		<Layout><br/><br/><br/>
+		<Layout title="News Page | KIRTI SMKN 1 Gombong" content="NEWS KIRTI STEMSAGO"><br/><br/><br/>
 			<div>
 				<BeritaCom/>
 

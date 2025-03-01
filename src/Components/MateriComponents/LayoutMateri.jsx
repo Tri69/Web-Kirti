@@ -6,6 +6,10 @@ import '../../assets/Styles/sidebar.css';
 const LayoutMateri = (props) => {
     return (
         <>
+         <Helmet>
+                <title>{props.title}</title>
+                <meta name="description" content={props.content}/>
+            </Helmet>
             <NavbarComp />
             <Sidebars />
             <div>
