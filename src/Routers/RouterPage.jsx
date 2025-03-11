@@ -20,31 +20,31 @@ const RouterPage = () => {
                     element={<HomePage/>} 
                 />
                 <Route 
-                    path="profil" 
+                    path="/profil" 
                     element={<AboutPage/>}
                 />
 				<Route 
-                    path="alumni" 
+                    path="/alumni" 
                     element={<AlumniPage/>}
                     />
 				<Route 
-                    path="news" 
+                    path="/news" 
                     element={<NewsPage/>}/>
                 <Route 
-                    path='keanggotaan' 
+                    path="/keanggotaan" 
                     element={<AnggotaPage/>}/>
 				<Route 
-                    path="html_dasar" 
+                    path="/html_dasar" 
                     element={<HTMLDasar />}/>
                 <Route 
-                    path="materi/html/:url"
+                    path="/materi/html/:url"
                     element={<MateriRender />}/>
                 <Route 
-                    path='css_dasar' 
+                    path="/css_dasar"
                     element={<CSSDasar/>}
                     />
                 <Route 
-                    path='javascript_dasar' 
+                    path="/javascript_dasar"
                     element={<JavaScriptDasar/>}/>
                 <Route 
                     path="*" 
