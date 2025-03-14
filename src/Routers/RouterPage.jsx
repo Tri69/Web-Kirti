@@ -9,6 +9,8 @@ import AnggotaPage from '../Pages/AnggotaPage';
 import CSSDasar from '../Pages/Materi/CSSDasar';
 import JavaScriptDasar from '../Pages/Materi/JavaScriptDasar';
 import MateriRender from '../Components/MateriComponents/MateriRender';
+import FormSaranPage from '../Pages/FormSaranPage';
+import TerimaKasihPage from '../Pages/TerimaKasihPage';
 
 const RouterPage = () => {
     return(
@@ -20,31 +22,39 @@ const RouterPage = () => {
                     element={<HomePage/>} 
                 />
                 <Route 
-                    path="/profil" 
+                    path="profil" 
                     element={<AboutPage/>}
                 />
 				<Route 
-                    path="/alumni" 
+                    path="alumni" 
                     element={<AlumniPage/>}
                     />
 				<Route 
-                    path="/news" 
+                    path="news" 
                     element={<NewsPage/>}/>
                 <Route 
-                    path="/keanggotaan" 
+                    path='keanggotaan' 
                     element={<AnggotaPage/>}/>
 				<Route 
-                    path="/html_dasar" 
+					path="app/form-saran"
+					element={<FormSaranPage/>}
+					/>
+				<Route 
+					path="app/redirect"
+					element={<TerimaKasihPage/>}
+					/>
+				<Route 
+                    path="html_dasar" 
                     element={<HTMLDasar />}/>
                 <Route 
-                    path="/materi/html/:url"
+                    path="materi/html/:url"
                     element={<MateriRender />}/>
                 <Route 
-                    path="/css_dasar"
+                    path='css_dasar' 
                     element={<CSSDasar/>}
                     />
                 <Route 
-                    path="/javascript_dasar"
+                    path='javascript_dasar' 
                     element={<JavaScriptDasar/>}/>
                 <Route 
                     path="*" 

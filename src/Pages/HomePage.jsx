@@ -2,9 +2,9 @@ import Layout from "../Components/Layout";
 import '../App.css';
 import kegiatan from '../assets/kegiatan.jpg';
 import programming from '../assets/programming.png';
-import kegiatanmingguan from '../assets/kegiatan-mingguan.png';
+import kegiatanmingguan from '../assets/community.png';
 import networking from '../assets/networking.png';
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 import CompProfilHome from "../Components/HomeComponent/CompProfilHome";
 import BeritaCom from "../Components/HomeComponent/BeritaCom";
 import kegiatan1 from '../assets/kegiatan-1.jpg';
@@ -18,7 +18,7 @@ const HomePage = () => {
 				<div className="container-body">
 					<div className="caption-body" data-aos="fade-right">
 						<br /><br /><br /><br />
-						<h1> Welcome To The <b className="text-primary">KIRTI Organization</b></h1>
+						<h1> Welcome To The <b className="text-title1">KIRTI Organization</b></h1>
 						<h3>Information Technology, Programming, Networking and Research <br />
 							Organizations and Extracurriculars.
 							-SMK N1 Gombong</h3>
@@ -56,7 +56,7 @@ const HomePage = () => {
 							<div class="visi" >
 								<h3>Visi</h3>
 								<div class="visi-card" >
-									<img src={programming}  width="50px" height="50px"/>
+									<img src={programming}  width="200px" height="50px"/>
 									<p >
 										To become a center of excellence in the field of Information
 										Technology at SMKN 1 Gombong, contributing to the advancement and 
@@ -68,21 +68,21 @@ const HomePage = () => {
 								<h3>Misi</h3>
 								<div>
 								<div class="misi-card" >
-									<img src={programming}  width="50px" height="50px"/>
+									<img src={programming}  width="200px" height="50px"/>
 									<p>
 										To develop and echance memebers skills in the field of information Technology 
 										through joint learning activities, training, and workshops.
 									</p>
 								</div>
 								<div class="misi-card">
-									<img src={programming}  width="50px" height="50px"/>
+									<img src={programming}  width="200px" height="50px"/>
 									<p>
 										To share knowledge and exprertise in the field of Information Technology 
 										with the school community and wider public.
 									</p>
 								</div>
 								<div class="misi-card">
-									<img src={programming}  width="50px" height="50px"/>
+									<img src={programming}  width="200px" height="50px"/>
 									<p>
 										To develop and apply innovative and creative information Technology to improve life
 										quality and national progress, through three braches of Information Technology, namely
@@ -99,9 +99,9 @@ const HomePage = () => {
 					<div class="container  px-4 py-5" id="featured-3" >
                         <h2 class="pb-2 border-bottom text-center"><b class="line-title">Extra</b>curricular Activities </h2>
 						<div class="row g-2 py-5 row-cols-1 row-cols-lg-3 " id="pad" >
-							<div class="feature col "  id="box-col" className="Active-Feature">
+							<div class="feature col "  id="box-col" >
 								<div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-									<img class="bi" width="40px" height="40px" src={programming} />
+									<img class="bi" width="300px" height="70px" src={programming} />
 								</div>
 								<h3 class="fs-2">Programming</h3>
 								<p>Programming is the process of creating programs on a computer, which will produce
@@ -113,7 +113,7 @@ const HomePage = () => {
 							</div>
 							<div class="feature col " id="box-col">
 								<div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-									<img class="bi" width="40px" height="40px" src={networking} />
+									<img class="bi" width="300px" height="70px" src={networking} />
 								</div>
 								<h3 class="fs-2">Networking</h3>
 								<p>One the functions of a computer networks is to communicate and share data with
@@ -125,7 +125,7 @@ const HomePage = () => {
 							</div>
 							<div class="feature col" id="box-col">
 								<div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-									<img class="bi" width="40px" height="40px" src={kegiatanmingguan} />
+									<img class="bi" width="300" height="70px" src={kegiatanmingguan} />
 								</div>
 								<h3 class="fs-2">Community Activity</h3>
 								<p>Apart from the 2 main activities, KIRTI also has annual activities, namely Sharring

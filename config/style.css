@@ -1,0 +1,51 @@
+body{
+	background-color: aqua;font-family:Roboto;
+}
+.container-absensi{padding:10px;border-radius:5px;
+	background-color:whitesmoke;margin-right: 20%;margin-left:20%;
+}
+.box-title{
+	margin-top:10px;
+	margin-right:10px;margin-left:10px;border: 0.1px solid gray;
+	border-radius:5px;border-top:10px solid red;border-bottom-style:2px solid;
+	margin-right:4%;margin-left:4%;
+	background-color:white;padding:5px;
+}
+.box-absensi{
+	margin-top:20px;border: 0.1px solid gray;
+	border-radius:5px;background-color:white;
+	margin-right:10px;margin-left:10px;border-left-style:2px solid blue;
+	margin-right: 4%;margin-left:4%;
+	background-color:white;padding:3px;
+}
+.container-body:after {
+	content:"";
+	position:absolute;
+	top:0;right:0;left:0;bottom:0
+	background:linear-gradient(to bottom, transparent 0%, blue 100%)
+}
+ .text-absensi{
+	font-size:15px;
+	margin-bottom:10px;font-weight:bold;
+}
+.input-absensi{
+	width:90%;padding:8px;
+	border:none;border-bottom:1px solid gray;
+	
+}
+.input-absensi:focus{
+	outline:none;
+	border-bottom:1px solid gray;
+}
+.button-absensi{
+	width:120px;padding:5px;font-size:15px;
+	background-color:aqua;border:none;border-radius:5px;
+}
+.input-absensi:hover{
+	border-right-color:white;
+}
+@media(max-width:670px){
+	.container-absensi{
+		margin-left:2%;margin-right:1.5%;margin-top:1%;
+	}
+}

@@ -1,0 +1,55 @@
+<html>
+<head>
+	<link rel="stylesheet" href="./style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Absensi</title>
+</head>
+<body>
+	<main>
+		<div class="container-absensi">
+			<div class="box-title">
+				<h1>Form Absensi KIRTI STEMSAGO</h1>
+				
+				<p>Absensi KIRTI STEMSAGO Tahun 2024 / 2025</p><hr/>
+				<text>Isilah Absensi Berikut!.</text>
+			</div>
+			
+				<div class="box-absensi">
+					<p class="text-absensi">Nama Lengkap :</p><br/>
+					<input type="text" class="input-absensi" placeholder="Muhammad Ismail"/>
+				</div>
+				<div class="box-absensi">
+					<p class="text-absensi">Kelas :</p><br/>
+					<input type="text" class="input-absensi" placeholder="X TJKT A"/>
+				</div>
+				<div class="box-absensi">
+					<p class="text-absensi">Tanggal Pertemuan:</p><br/>
+					<input type="Date" class="input-absensi"/>
+				</div>
+				<div class="box-absensi">
+					<p class="text-absensi">Bidang Extra :</p><br/>
+					<input type="checkbox" /><text>Programming</text><br/>
+					<input type="checkbox" /><text>Networking</text>
+				</div>
+				<div class="box-absensi">
+					<p class="text-absensi">Status Pertemuan :</p><br/>
+					<input type="checkbox" /><text>Hadir</text><br/>
+					<input type="checkbox" /><text>Izin</text><br/>
+					<input type="checkbox" /><text>Sakit</text><br/>
+		
+				</div>
+				<div class="box-absensi">
+				<center>
+					<button class="button-absensi" onclick="SubmitForm()">Kirim</button></center>
+				</div>
+			
+		</div>
+	</main>
+	<script>
+		function SubmitForm(){
+			//e.preventDefault();
+			console.log('tes');
+		}
+	</script>
+</body>
+</html>

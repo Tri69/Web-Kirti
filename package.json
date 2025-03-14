@@ -16,11 +16,9 @@
     "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
-    "react-doc-viewer": "^0.1.14",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-loading-indicators": "^1.0.0",
-    "react-pdf": "^9.1.1",
     "react-router-dom": "^6.27.0",
     "rimraf": "^5.0.10"
   },
