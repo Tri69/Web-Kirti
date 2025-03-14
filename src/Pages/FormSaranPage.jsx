@@ -39,7 +39,7 @@ const FormSaranPage = ()=> {
 			return massageError;
 		}
 		PostSaran();
-		navigate('app/redirect')
+		navigate('/app/redirect')
 		//console.log(name + devisi + kritik + saran + pengalaman + tambahbidang)
 	}
 	
