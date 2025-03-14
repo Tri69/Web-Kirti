@@ -36,11 +36,11 @@ const RouterPage = () => {
                     path='keanggotaan' 
                     element={<AnggotaPage/>}/>
 				<Route 
-					path="app/form-saran"
+					path="form-saran"
 					element={<FormSaranPage/>}
 					/>
 				<Route 
-					path="app/redirect"
+					path="redirect"
 					element={<TerimaKasihPage/>}
 					/>
 				<Route 
