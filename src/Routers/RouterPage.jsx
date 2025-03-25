@@ -11,56 +11,71 @@ import JavaScriptDasar from '../Pages/Materi/JavaScriptDasar';
 import MateriRender from '../Components/MateriComponents/MateriRender';
 import FormSaranPage from '../Pages/FormSaranPage';
 import TerimaKasihPage from '../Pages/TerimaKasihPage';
-
+import ProtectedRoute from './ProtectedRoute';
+import LoginPage from '../Auth/Login';
+import RegisterPage from '../Auth/Register';
+import DashboardPage from '../Auth/Dashboard'
 const RouterPage = () => {
-    return(
+    return (
         <>
-           <Router>
-            <Routes>
-                <Route 
-                    index 
-                    element={<HomePage/>} 
-                />
-                <Route 
-                    path="profil" 
-                    element={<AboutPage/>}
-                />
-				<Route 
-                    path="alumni" 
-                    element={<AlumniPage/>}
+            <Router>
+                <Routes>
+                    <Route
+                        index
+                        element={<HomePage />}
                     />
-				<Route 
-                    path="news" 
-                    element={<NewsPage/>}/>
-                <Route 
-                    path='keanggotaan' 
-                    element={<AnggotaPage/>}/>
-				<Route 
-					path="app/form-saran"
-					element={<FormSaranPage/>}
-					/>
-				<Route 
-					path="app/redirect"
-					element={<TerimaKasihPage/>}
-					/>
-				<Route 
-                    path="html_dasar" 
-                    element={<HTMLDasar />}/>
-                <Route 
-                    path="materi/html/:url"
-                    element={<MateriRender />}/>
-                <Route 
-                    path='css_dasar' 
-                    element={<CSSDasar/>}
+                    <Route
+                        path="profil"
+                        element={<AboutPage />}
                     />
-                <Route 
-                    path='javascript_dasar' 
-                    element={<JavaScriptDasar/>}/>
-                <Route 
-                    path="*" 
-                    element={<NotFound/>}/>
-            </Routes>
-           </Router>
+                    <Route
+                        path="alumni"
+                        element={<AlumniPage />}
+                    />
+                    <Route
+                        path="news"
+                        element={<NewsPage />} />
+                    <Route
+                        path='keanggotaan'
+                        element={<AnggotaPage />} />
+                    <Route
+                        path="app/form-saran"
+                        element={<FormSaranPage />}
+                    />
+                    <Route
+                        path="app/redirect"
+                        element={<TerimaKasihPage />}
+                    />
+                    <Route 
+                        path="app/login"
+                        element={<LoginPage/>}/>
+                    <Route 
+                        path="app/register"
+                        element={<RegisterPage/>}/>
+                    <Route 
+                        element={<ProtectedRoute/>}>
+						<Route 
+							path="app/dashboard"
+							element={<DashboardPage/>}/>
+                        <Route
+                            path="html_dasar"
+                            element={<HTMLDasar />} />
+                        <Route
+                            path="materi/html/:url"
+                            element={<MateriRender />} />
+                        <Route
+                            path='css_dasar'
+                            element={<CSSDasar />}
+                        />
+                        <Route
+                            path='javascript_dasar'
+                            element={<JavaScriptDasar />} />
+                    </Route>
+                    <Route
+                        path="*"
+                        element={<NotFound />} />
+                </Routes>
+            </Router>
         </>
     )
 }

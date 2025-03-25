@@ -40,7 +40,7 @@ const FormSaranPage = ()=> {
 		}
 		PostSaran();
 		navigate('/app/redirect')
-		//console.log(name + devisi + kritik + saran + pengalaman + tambahbidang)
+		console.log(name + devisi + kritik + saran + pengalaman + tambahbidang)
 	}
 	
 	return(

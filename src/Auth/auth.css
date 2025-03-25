@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(to bottom, aqua , white);
+}
+.container-auth {
+    box-shadow: 3px 5px 9px rgba(0,0,0,.24);
+    border-radius: 12px;
+    background-color: white;padding: 10px;
+   
+}
+.submit-button{
+    text-align: center;
+}
+.dashboard-profil{
+	width:120px;height:120px; border-radius:50%;
+	background-color:whitesmoke;
+}
+.table-data {
+	padding: 10px;
+	background-color:white;border-radius:12px;
+	border:.1px solid rgba(0,0,0,.1)
+}
+.table-data .box-data{
+	width: 350px; padding:5px;border-radius:5px;
+	box-shadow: 2px 3px 4px rgba(0,0,0,.2)
+}
+.box-data {
+	padding:5px;
+}
+.box-data h3 {
+	font-size:23px;
+	text-align:justify;
+}
+.course h2 {
+	text-align:center;
+}
+.box-course{
+	margin-top:-100px;
+}
