@@ -64,11 +64,11 @@ const FormSaranPage = ()=> {
 				</div>
 				<div class="box-absensi">
 					<p class="text-absensi">Bidang Extra :</p><br/>
-					<input type="checkbox"
+					<input type="radio" name="devisi"
 						value="programming"
 						onChange={(e)=> setDevisi(e.target.value)}/>
 						<text>Programming</text><br/>
-					<input type="checkbox" 
+					<input type="radio" name="devisi"
 						value="networking"
 						onChange={(e)=> setDevisi(e.target.value)}/>
 						<text>Networking</text>
@@ -88,13 +88,13 @@ const FormSaranPage = ()=> {
 				</div>
 				<div class="box-absensi">
 					<p class="text-absensi">Pengalaman:</p><br/>
-					<input type="checkbox" 
+					<input type="radio" name="pengalaman"
 						value="Sangat Baik"
 						onChange={(e) => setPengalaman(e.target.value)}/><text>Sangat Baik</text><br/>
-					<input type="checkbox" 
+					<input type="radio" name="pengalaman" 
 						value="Baik"
 						onChange={(e) => setPengalaman(e.target.value)}/><text>Baik</text><br/>
-					<input type="checkbox" 
+					<input type="radio" name="pengalaman"
 						value="Kurang"
 						onChange={(e) => setPengalaman(e.target.value)}/><text>Kurang</text><br/>
 			
