@@ -10,6 +10,9 @@ body{
 .submit-button{
     text-align: center;
 }
+.button-auth{
+	width:100%;
+}
 .dashboard-profil{
 	width:120px;height:120px; border-radius:50%;
 	background-color:whitesmoke;
