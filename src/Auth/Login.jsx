@@ -68,11 +68,13 @@ const LoginPage = () => {
                                 onChange={(event) => setPassword(event.target.value)}
                             />
                         </Form.Group><br/>
+			    <center>
                         <Button 
                             variant="primary"
+			    className="button-auth"
                             onClick={ HandleSubmit}>
                             Submit
-                        </Button><br/>
+                        </Button></center><br/>
                         <p className="text-center">Belum Punya Akun? <a href="/app/register">Register</a></p>
                     </Form>
                 </Container>
