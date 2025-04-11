@@ -40,13 +40,13 @@ const DashboardPage = ()=> {
 			<h2>Data Profil</h2>
 			<div class="table-data">
 				<div class="box-data">
-					<h3>Username : {profil.username} </h3>
+					<h4>Username : {profil.username} </h4>
 				</div>
 				<div class="box-data">
-					<h3>Email : {profil.email}</h3>
+					<h4>Email : {profil.email}</h4>
 				</div>
 				<div class="box-data">
-					<h3>Devisi: Networking </h3>
+					<h4>Devisi: {profil.devisi}</h4>
 				</div>
 			</div>
 			<a href="/app/login" onClick={Logout}>Logout</a>
