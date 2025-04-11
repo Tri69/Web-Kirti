@@ -95,6 +95,11 @@ const RegisterPage = () => {
                                 onChange={(event) => setPassword(event.target.value)}
                             />
                         </Form.Group>
+
+
+
+
+			    
 			    <Form.Group className="mb-1" controlId="formBasicPassword">
                             <Form.Label>
                                 Devisi
@@ -105,7 +110,7 @@ const RegisterPage = () => {
     
                                 label="Programming" value="Programming"
                                 onClick={(event) => setDevisi(event.target.value)}
-                            /></br>
+                            /><br/>
  <Form.Control
                                 type="radio" name="devisi1"
                                 required
