@@ -104,19 +104,19 @@ const RegisterPage = () => {
                             <Form.Label>
                                 Devisi
                             </Form.Label>
-                            <Form.Control
+                            <input
                                 type="radio"
-                                required name="devisi1"
+                                name="devisi1"
     
-                                label="Programming" value="Programming"
+                                 value="Programming"
                                 onClick={(event) => setDevisi(event.target.value)}
-                            /><br/>
- <Form.Control
+                            /><text>Programming</text><br/>
+ <input
                                 type="radio" name="devisi1"
-                                required
-                                label="Networking" value="Networking"
+                                
+                                value="Networking"
                                 onClick={(event) => setDevisi(event.target.value)}
-                            />
+                            /><text>Networking</text>
                         </Form.Group><br/><br/>
 			    <center>
                         <Button
