@@ -110,7 +110,7 @@ const RegisterPage = () => {
     
                                  value="Programming"
                                 onClick={(event) => setDevisi(event.target.value)}
-                            /><text>Programming</text><br/>
+                            /><text>Programming</text><br/><br/>
  <input
                                 type="radio" name="devisi1"
                                 
