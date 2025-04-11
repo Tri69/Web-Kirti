@@ -103,14 +103,14 @@ const RegisterPage = () => {
 			    <Form.Group className="mb-1" controlId="formBasicPassword">
                             <Form.Label>
                                 Devisi
-                            </Form.Label>
+                            </Form.Label><br/>
                             <input
                                 type="radio"
                                 name="devisi1"
     
                                  value="Programming"
                                 onClick={(event) => setDevisi(event.target.value)}
-                            /><text>Programming</text><br/><br/>
+                            /><text>Programming</text><br/>
  <input
                                 type="radio" name="devisi1"
                                 
