@@ -12,9 +12,11 @@ const RegisterPage = () => {
     const [password, setPassword] = useState('');
     const [err, setErr] = useState('');
 	const [scc, setScc] = useState('');
+    const [devisi, setDevisi] = useState('');
+
 	const Navigate = useNavigate()
     const URL_API = 'https://api-server-five-beta.vercel.app/api/v2/auth/register'
-    const FetchApi = async (user, emails, pass) => {
+    const FetchApi = async (user, emails, pass, devisi) => {
         const FetchData = await fetch(URL_API, {
             method: "POST",
             headers:{
@@ -23,7 +25,8 @@ const RegisterPage = () => {
             body: JSON.stringify({
                 username : user,
                 email : emails,
-                password: pass
+                password: pass,
+		devisi : devisi
             })
         })
 		
@@ -44,7 +47,7 @@ const RegisterPage = () => {
 	
     function HandleSubmit() {
         if(username.length <= 0 ||email.length <= 0 || password.length <= 0) return setErr('Data Belum Lengkap')
-        FetchApi(username, email, password)
+        FetchApi(username, email, password, devisi)
 		console.log('yes');
     }
     
@@ -91,13 +94,32 @@ const RegisterPage = () => {
                                 placeholder="Password"
                                 onChange={(event) => setPassword(event.target.value)}
                             />
+                        </Form.Group>
+			    <Form.Group className="mb-1" controlId="formBasicPassword">
+                            <Form.Label>
+                                Devisi
+                            </Form.Label>
+                            <Form.Control
+                                type="radio"
+                                required name="devisi1"
+    
+                                label="Programming" value="Programming"
+                                onClick={(event) => setDevisi(event.target.value)}
+                            /></br>
+ <Form.Control
+                                type="radio" name="devisi1"
+                                required
+                                label="Networking" value="Networking"
+                                onClick={(event) => setDevisi(event.target.value)}
+                            />
                         </Form.Group><br/><br/>
+			    <center>
                         <Button
                             variant="primary"
-                            className="text-center"
+                            className="button-auth"
                             onClick={() => HandleSubmit()}>
                             Submit
-                        </Button><br/>
+                        </Button></center><br/>
                         <p>{scc.length > 5 ? scc : err}</p>
                         <p className="text-center">Sudah Daftar? <a href="/app/login">Login</a></p>
                     </Form>
