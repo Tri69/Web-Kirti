@@ -18,19 +18,19 @@ body{
 	background-color:whitesmoke;
 }
 .table-data {
-	padding: 10px;
+	padding: 8px;
 	background-color:white;border-radius:12px;
 	border:.1px solid rgba(0,0,0,.1)
 }
 .table-data .box-data{
-	width: 350px; padding:5px;border-radius:5px;
+	width: 350px; padding:3px;border-radius:5px;
 	box-shadow: 2px 3px 4px rgba(0,0,0,.2)
 }
 .box-data {
-	padding:5px;
+	padding:3px;
 }
-.box-data h3 {
-	font-size:23px;
+.box-data h4{
+	font-size:18px;
 	text-align:justify;
 }
 .course h2 {
